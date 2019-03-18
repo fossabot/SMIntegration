@@ -24,9 +24,9 @@ class ResponseProcessor:
         content = json.loads(r.content)
         self.language = content["metadata"]["respondent"]["language"]["value"]
         self.recipient = content["pages"][1]["questions"][2]["answers"][0]["text"]
-        return True
 
     def process(self):
+        self.fetch_details()
         try:
             EmailSender(
                 **{
@@ -35,6 +35,7 @@ class ResponseProcessor:
                     "recipient": self.recipient,
                 }
             ).send()
+            True
         except:
             rollbar.report_exc_info()
 

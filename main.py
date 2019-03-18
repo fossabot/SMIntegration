@@ -19,6 +19,7 @@ def endpoint(request):
     if (event_data["event_type"] == "response_completed"):
         response_id = event_data["object_id"]
         ResponseProcessor(response_id).process()
+        return True
 
 def create_webhook():
     a = {
