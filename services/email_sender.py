@@ -8,10 +8,12 @@ class EmailSender:
     def __init__(self, version, recipient):
         self.template_id = "d-14ceac596f5640108bba2dcf5d57a335"
         self.versions_dict = {
-            "beginning": "3776ea05-c4d4-40d0-a314-75e3e65d7332",
-            "developing": "d367eb08-4c57-4b8c-b475-3894378ba047",
-            "advancing": "fcba3538-caa7-4fad-914f-c2dcb9a0441e",
-            "leading": "83c0fa6f-c3ad-411a-9997-8d494f0f2189",
+            "en": {
+                "beginning": "3776ea05-c4d4-40d0-a314-75e3e65d7332",
+                "developing": "d367eb08-4c57-4b8c-b475-3894378ba047",
+                "advancing": "fcba3538-caa7-4fad-914f-c2dcb9a0441e",
+                "leading": "83c0fa6f-c3ad-411a-9997-8d494f0f2189",
+            }
         }
         self.version = self.versions_dict[version]
         self.recipient = recipient
