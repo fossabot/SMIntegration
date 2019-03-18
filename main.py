@@ -8,15 +8,17 @@ import os
 from flask import request
 from services.response_processor import ResponseProcessor
 from dotenv import load_dotenv
-
+import rollbar
 load_dotenv()
+
+rollbar.init(os.getenv("ROLLBAR_API_KEY"))
 
 
 def endpoint(request):
     event_data = request.args
     if (event_data["event_type"] == "response_completed"):
         response_id = event_data["object_id"]
-        ResponseProcessor(response_id).send_email
+        ResponseProcessor(response_id).process()
 
 def create_webhook():
     a = {
