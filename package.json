@@ -1,0 +1,14 @@
+{
+  "name": "survey-monkey-enpoint",
+  "version": "0.0.1",
+  "description": "Process SurveyMonkey API",
+  "author": "José Ribeiro <jose@1313labs.co>",
+  "license": "MIT",
+  "main": "main.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "serverless-google-cloudfunctions": "^2.1.0"
+  }
+}
