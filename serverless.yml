@@ -18,7 +18,7 @@ provider:
   credentials: ~/.gcloud/credentials.json # path must be absolute
 
 functions:
-  currentTime:
+  survey_endpoint:
     handler: endpoint
     events:
       - http: path

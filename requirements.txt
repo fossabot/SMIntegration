@@ -1,3 +1,4 @@
 Flask==1.0.2
 python-dotenv==0.10.1
 requests==2.21.0
+sendgrid==5.6.0

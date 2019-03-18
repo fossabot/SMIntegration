@@ -5,7 +5,7 @@ import json
 import datetime
 import requests
 import os
-import flask
+from flask import request
 from services.response_processor import ResponseProcessor
 from dotenv import load_dotenv
 
@@ -13,10 +13,10 @@ load_dotenv()
 
 
 def endpoint(request):
-    event_data = json.loads(request.data)
+    event_data = request.args
     if (event_data["event_type"] == "response_completed"):
         response_id = event_data["object_id"]
-    return ResponseProcessor(response_id).fetch_details()
+    return json.dumps(ResponseProcessor(response_id).fetch_details())
 
 
 def create_webhook():
