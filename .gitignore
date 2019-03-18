@@ -1,0 +1,8 @@
+node_modules
+.vscode
+.serverless
+.idea
+__pycache__
+.env
+venv/
+package-lock.json
