@@ -5,7 +5,7 @@ import requests
 
 
 class EmailSender:
-    def __init__(self, version):
+    def __init__(self, version, recipient):
         self.template_id = "d-14ceac596f5640108bba2dcf5d57a335"
         self.versions_dict = {
             "beginning": "3776ea05-c4d4-40d0-a314-75e3e65d7332",
@@ -14,6 +14,7 @@ class EmailSender:
             "leading": "83c0fa6f-c3ad-411a-9997-8d494f0f2189",
         }
         self.version = self.versions_dict[version]
+        self.recipient = recipient
 
     # first activate version for template
     def activate_version(self):
@@ -32,8 +33,8 @@ class EmailSender:
     def send_email(self):
         self.activate_version()
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get("SENDGRID_API_KEY"))
-        from_email = Email("jose@1313labs.co")
-        to_email = Email("ribeirojoze@gmail.com")
+        from_email = Email("education@afs.org")
+        to_email = Email(self.recipient)
         subject = ""
         mail = Mail(from_email, subject, to_email)
         mail.template_id = self.template_id
