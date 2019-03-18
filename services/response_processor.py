@@ -10,4 +10,4 @@ class ResponseProcessor:
     def fetch_details(self):
         r = requests.get(self.response_endpoint, headers={'Authorization': os.getenv('SURVEY_MONKEY_API_KEY')})
         content = json.loads(r.content)
-        return content['quiz_results']
+        return content
