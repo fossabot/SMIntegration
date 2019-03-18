@@ -21,4 +21,4 @@ class ResponseProcessor:
 
     def process(self):
         email_args = self.fetch_details()
-        EmailSender(**{'language':self.language, 'version': self.version, 'recipient': self.recipient})
+        EmailSender(**{'language':self.language, 'version': self.version, 'recipient': self.recipient}).send()
