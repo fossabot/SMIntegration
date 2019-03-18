@@ -3,28 +3,28 @@
 
 import json
 import datetime
+import requests
+import os
+import flask
+from services.response_processor import ResponseProcessor
 from dotenv import load_dotenv
+
 load_dotenv()
 
 
 def endpoint(request):
-    """GCP HTTP Cloud Function Example.
-    Args:
-        request (flask.Request)
-    Returns:
-        The response text, or any set of values that can be turned into a
-        Response object using `make_response`
-        <http://flask.pocoo.org/docs/0.12/api/#flask.Flask.make_response>.
-    """
+    event_data = json.loads(request.data)
+    if (event_data["event_type"] == "response_completed"):
+        response_id = event_data["object_id"]
+    return ResponseProcessor(response_id).fetch_details()
 
-    current_time = datetime.datetime.now().time()
-    body = {
-        "message": "Received a {} request at {}".format(request.method, str(current_time))
+
+def create_webhook():
+    a = {
+        "name": "Integration webhook",
+        "event_type": "response completed",
+        "object_type": "survey",
+        "object_ids": ["164317910"],
+        "subscription_url": "https://us-central1-afsdigitaltools.cloudfunctions.net/endpoint",
     }
-
-    response = {
-        "statusCode": 200,
-        "body": body
-    }
-
-    return json.dumps(response, indent=4)
+    requests.post(a, headers={"Authorization": os.getenv("SURVEY_MONKEY_API_KEY")})
