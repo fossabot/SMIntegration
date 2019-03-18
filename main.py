@@ -16,8 +16,7 @@ def endpoint(request):
     event_data = request.args
     if (event_data["event_type"] == "response_completed"):
         response_id = event_data["object_id"]
-    return json.dumps(ResponseProcessor(response_id).fetch_details())
-
+        ResponseProcessor(response_id).send_email
 
 def create_webhook():
     a = {
