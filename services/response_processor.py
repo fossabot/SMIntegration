@@ -35,7 +35,6 @@ class ResponseProcessor:
                     "recipient": self.recipient,
                 }
             ).send()
-            True
         except:
             rollbar.report_exc_info()
 

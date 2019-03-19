@@ -1,6 +1,3 @@
-"""GCP HTTP Cloud Function Example."""
-# -*- coding: utf-8 -*-
-
 import json
 import datetime
 import requests
@@ -14,19 +11,28 @@ load_dotenv()
 rollbar.init(os.getenv("ROLLBAR_API_KEY"))
 
 
-def endpoint(request):
-    event_data = request.args
-    if (event_data["event_type"] == "response_completed"):
-        response_id = event_data["object_id"]
-        ResponseProcessor(response_id).process()
-        return True
+def survey_endpoint(request):
+    print(request.method)
+    if request.method != 'POST':
+        return '', 200
+    else: 
+        content_type = request.headers['content-type']
+        if content_type == 'application/vnd.surveymonkey.response.v1+json':
+            event_data = request.get_json(silent=True)
+        else:
+            raise ValueError("Unknown content type: {}".format(content_type))
+        if (event_data["event_type"] == "response_completed"):
+            response_id = event_data["object_id"]
+            ResponseProcessor(response_id).process()
 
 def create_webhook():
+    api_endpoint = "https://api.surveymonkey.com/v3/webhooks"
     a = {
         "name": "Integration webhook",
-        "event_type": "response completed",
+        "event_type": "response_completed",
         "object_type": "survey",
         "object_ids": ["164317910"],
-        "subscription_url": "https://us-central1-afsdigitaltools.cloudfunctions.net/endpoint",
+        "subscription_url": "https://us-central1-afsdigitaltools.cloudfunctions.net/survey_endpoint",
     }
-    requests.post(a, headers={"Authorization": os.getenv("SURVEY_MONKEY_API_KEY")})
+    r = requests.post(api_endpoint, data=a, headers={"Authorization": os.getenv("SURVEY_MONKEY_API_KEY")})
+    print(r.value)

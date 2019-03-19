@@ -1,4 +1,4 @@
-service: python-simple-http-endpoint
+service: afsdigitaltools-endpoint
 
 frameworkVersion: ">=1.2.0 <2.0.0"
 
@@ -19,6 +19,6 @@ provider:
 
 functions:
   survey_endpoint:
-    handler: endpoint
+    handler: survey_endpoint
     events:
       - http: path

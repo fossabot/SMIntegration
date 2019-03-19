@@ -1,6 +1,7 @@
 import sendgrid
 from sendgrid.helpers.mail import Email, Content, Substitution, Mail
 import os
+import rollbar
 import requests
 
 
@@ -40,9 +41,9 @@ class EmailSender:
             headers={"authorization": "Bearer " + os.getenv("SENDGRID_API_KEY")},
         )
         if int(r.status_code) is 200:
-            return True
+            True
         else:
-            return False
+            rollbar.report_exc_info()
 
     def send(self):
         self.activate_version()
