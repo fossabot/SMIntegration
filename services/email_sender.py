@@ -47,6 +47,7 @@ class EmailSender:
 
     def send(self):
         self.activate_version()
+        print(self.recipient, self.version)
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get("SENDGRID_API_KEY"))
         from_email = Email("education@afs.org")
         to_email = Email(self.recipient)

@@ -12,7 +12,6 @@ rollbar.init(os.getenv("ROLLBAR_API_KEY"))
 
 
 def survey_endpoint(request):
-    print(request.method)
     if request.method != 'POST':
         return '', 200
     else: 

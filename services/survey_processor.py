@@ -73,7 +73,7 @@ class SurveyProcessor:
         if score >= 81:
             return 'leading'
         elif score >= 65 or score <= 80:
-            return 'advacing'
+            return 'advancing'
         elif score >= 51 or score <= 64:
             return 'developing'
         else:
