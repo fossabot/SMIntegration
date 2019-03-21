@@ -24,6 +24,7 @@ def survey_endpoint(request):
         if (event_data["event_type"] == "response_completed"):
             response_id = event_data["object_id"]
             ResponseProcessor(response_id).process()
+    return '', 200
 
 def create_webhook():
     api_endpoint = "https://api.surveymonkey.com/v3/webhooks"
