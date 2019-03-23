@@ -76,4 +76,5 @@ class SurveyProcessor:
             return 'advancing'
         elif score >= 16 or score <= 28:
             return 'developing'
-
+        else:
+            return 'beginning'
