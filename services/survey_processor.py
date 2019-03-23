@@ -70,11 +70,10 @@ class SurveyProcessor:
             score += answers_score_json[i]
         self.score = score
 
-        if score >= 81:
+        if score >= 40:
             return 'leading'
-        elif score >= 65 or score <= 80:
+        elif score >= 29 or score <= 39:
             return 'advancing'
-        elif score >= 51 or score <= 64:
+        elif score >= 16 or score <= 28:
             return 'developing'
-        else:
-            return 'beginning'
+
