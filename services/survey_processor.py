@@ -2,6 +2,7 @@ import os
 import json
 import requests
 import functools
+import re
 
 
 class SurveyProcessor:
@@ -24,7 +25,7 @@ class SurveyProcessor:
             'answers'), page['questions'])
 
         a = list(
-            map(lambda question: {'id': question['id'], 'text': question['headings'][0]['heading'], 'choices': list(map(lambda x: {'id': x['id'], 'text': x['text'], 'score': 0}, question['answers']['choices']))}, questions))
+            map(lambda question: {'id': question['id'], 'text': self.remove_html(question['headings'][0]['heading']), 'choices': list(map(lambda x: {'id': x['id'], 'text': self.remove_html(x['text']), 'score': 0}, question['answers']['choices']))}, questions))
 
         return a
 
@@ -40,3 +41,7 @@ class SurveyProcessor:
 
         with open("./assets/choices_scores.json", "w") as fp:
             json.dump(choice_score_dict, fp)
+
+    def remove_html(self, data):
+        p = re.compile(r'<.*?>')
+        return p.sub('', data)
