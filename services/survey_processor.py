@@ -6,6 +6,7 @@ import functools
 with open("assets/answers_scores.json", "r") as read_file:
     answers_score_json = json.load(read_file)
 
+
 class SurveyProcessor:
     def __init__(self, answer_id):
         self.survey_endpoint = 'https://api.surveymonkey.com/v3/surveys/164317910'
@@ -31,19 +32,15 @@ class SurveyProcessor:
         self.pages = dict((key, value) for (key, value) in zip(
             [x['id'] for x in content], list(range(6))[1:]))
 
-    def fetch_details(self):
-        r = requests.get(self.survey_endpoint + '/details',
-                         headers={'Authorization': os.getenv('SURVEY_MONKEY_API_KEY')})
-        content = json.loads(r.content)
-
-        pages = [page for page in content['pages']]
-
-        return list(map(self.filter_score_answers, pages))
-
     def fetch_response(self):
         r = requests.get(self.survey_endpoint + '/responses/{}/details'.format(self.answer_id),
                          headers={'Authorization': os.getenv('SURVEY_MONKEY_API_KEY')})
         a = json.loads(r.content)
+
+        if list(a.keys())[0] is 'error':
+            print(a['error'])
+            return
+
         response = []
 
         for page in a['pages']:
@@ -54,11 +51,24 @@ class SurveyProcessor:
 
         self.answers = response
 
+    def fetch_details(self):
+        r = requests.get(self.survey_endpoint + '/details',
+                         headers={'Authorization': os.getenv('SURVEY_MONKEY_API_KEY')})
+        content = json.loads(r.content)
+
+        pages = [page for page in content['pages']]
+
+        filtered_answers = list(map(self.filter_score_answers, pages))
+        with open("./assets/answers_scores.json", "w") as fp:
+            json.dump(filtered_answers, fp)
+
     def filter_score_answers(self, page):
         questions = filter(lambda question: question.get(
             'answers'), page['questions'])
 
-        return list(map(lambda question: {'id': question['id'], 'choices': question['answers']['choices']}, questions))
+        a = list(
+            map(lambda question: {'id': question['id'], 'text': question['headings'][0]['heading'], 'choices': list(map(lambda x: {'id': x['id'], 'text': x['text'], 'score': 0}, question['answers']['choices']))}, questions))
+        return a
 
     def get_page_id(self, page_number):
         return (list(self.pages.keys())[list(self.pages.values()).index(page_number)])

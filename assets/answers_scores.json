@@ -1,123 +1,1625 @@
-{
-  "1384323119": 0,
-  "1384323120": 0,
-  "1384438046": 0,
-  "1384438047": 0,
-  "1384460385": 0,
-  "1384460388": 0,
-  "1384465193": 0,
-  "1384465194": 0,
-  "1384465197": 0,
-  "1384465198": 0,
-  "1384465199": 0,
-  "1384465200": 0,
-  "1384465201": 0,
-  "1384465202": 0,
-  "1384465203": 0,
-  "1384465204": 0,
-  "1384465205": 0,
-  "1384465206": 0,
-  "1384465207": 0,
-  "1384465208": 0,
-  "1384473766": 2,
-  "1384473767": 4,
-  "1384473768": 6,
-  "1384473769": 8,
-  "1384579404": 2,
-  "1384579405": 4,
-  "1384579406": 6,
-  "1384579407": 8,
-  "1384588322": 2,
-  "1384588323": 4,
-  "1384588324": 6,
-  "1384588325": 8,
-  "1395519215": 2,
-  "1395519217": 3,
-  "1395519219": 5,
-  "1395519220": 7,
-  "1395527661": 0,
-  "1395527662": 1,
-  "1395539605": 2,
-  "1395539606": 4,
-  "1395539607": 6,
-  "1395539608": 8,
-  "1395553362": 0,
-  "1395553363": 0,
-  "1395553364": 0,
-  "1395553365": 0,
-  "1395556369": 0,
-  "1395556370": 1,
-  "1395556372": 1,
-  "1395563095": 2,
-  "1395563096": 4,
-  "1395563097": 6,
-  "1395563098": 8,
-  "1395579402": 0,
-  "1395579403": 0,
-  "1395579404": 0,
-  "1395579405": 0,
-  "1395649141": 0,
-  "1395649140": 1,
-  "1395713937": 2,
-  "1395713938": 4,
-  "1395713939": 6,
-  "1395713940": 8,
-  "1395720532": 2,
-  "1395720533": 3,
-  "1395720534": 5,
-  "1395720535": 7,
-  "1395723915": 0,
-  "1395723917": 1,
-  "1395729129": 2,
-  "1395729130": 4,
-  "1395729131": 7,
-  "1395729132": 9,
-  "1395732471": 0,
-  "1395732472": 1,
-  "1395732473": 2,
-  "1395739013": 0,
-  "1395739015": 0,
-  "1395739016": 0,
-  "1395739019": 0,
-  "1395752460": 0,
-  "1395752461": 1,
-  "1395752462": 2,
-  "1395760171": 2,
-  "1395760173": 4,
-  "1395760176": 6,
-  "1395760177": 8,
-  "1395781589": 0,
-  "1395781590": 0,
-  "1395781593": 0,
-  "1395781594": 0,
-  "1395781596": 0,
-  "1395781597": 0,
-  "1395791035": 0,
-  "1395791036": 0,
-  "1395791037": 0,
-  "1395791038": 0,
-  "1395796041": 0,
-  "1395796042": 0,
-  "1395796044": 0,
-  "1395796045": 0,
-  "1395800269": 0,
-  "1395800270": 0,
-  "1395809699": 0,
-  "1395809701": 0,
-  "1395809702": 0,
-  "1395809703": 0,
-  "1395811724": 0,
-  "1395811725": 0,
-  "1395811726": 0,
-  "1395811727": 0,
-  "1395814382": 0,
-  "1395814383": 0,
-  "1395814384": 0,
-  "1395814385": 0,
-  "1395819681": 0,
-  "1395819682": 0,
-  "1395819683": 0,
-  "1395819684": 0,
-  "1395819685": 0,
-  "1395819686": 0
-}
+[
+  [{
+    "id": "200474523",
+    "text": "Do you accept?",
+    "choices": [{
+      "id": "1384323119",
+      "text": "I accept",
+      "score": 0
+    }, {
+      "id": "1384323120",
+      "text": "I don't accept",
+      "score": 0
+    }]
+  }],
+  [{
+    "id": "200491524",
+    "text": "If you want to receive news and resources related to global competence from AFS Intercultural Programs, please select yes below:",
+    "choices": [{
+      "id": "1384438046",
+      "text": "yes, send me news and resources related to global competence.",
+      "score": 0
+    }, {
+      "id": "1384438047",
+      "text": "no, thanks. I just want to receive the results for my school.",
+      "score": 0
+    }]
+  }, {
+    "id": "200494855",
+    "text": "Type of school:",
+    "choices": [{
+      "id": "1384460385",
+      "text": "Public",
+      "score": 0
+    }, {
+      "id": "1384460388",
+      "text": "Private",
+      "score": 0
+    }]
+  }, {
+    "id": "200495576",
+    "text": "Grades taught:",
+    "choices": [{
+      "id": "1384465193",
+      "text": "Pre-K",
+      "score": 0
+    }, {
+      "id": "1384465194",
+      "text": "K",
+      "score": 0
+    }, {
+      "id": "1384465197",
+      "text": "1",
+      "score": 0
+    }, {
+      "id": "1384465198",
+      "text": "2",
+      "score": 0
+    }, {
+      "id": "1384465199",
+      "text": "3",
+      "score": 0
+    }, {
+      "id": "1384465200",
+      "text": "4",
+      "score": 0
+    }, {
+      "id": "1384465201",
+      "text": "5",
+      "score": 0
+    }, {
+      "id": "1384465202",
+      "text": "6",
+      "score": 0
+    }, {
+      "id": "1384465203",
+      "text": "7",
+      "score": 0
+    }, {
+      "id": "1384465204",
+      "text": "8",
+      "score": 0
+    }, {
+      "id": "1384465205",
+      "text": "9",
+      "score": 0
+    }, {
+      "id": "1384465206",
+      "text": "10",
+      "score": 0
+    }, {
+      "id": "1384465207",
+      "text": "11",
+      "score": 0
+    }, {
+      "id": "1384465208",
+      "text": "12",
+      "score": 0
+    }]
+  }],
+  [{
+    "id": "200496793",
+    "text": "When thinking about my school and diversity\u2019s role (in terms of gender, socio-economic, ethnic, language, cultural and religious backgrounds) in the school\u2019s policy/strategy/vision",
+    "choices": [{
+      "id": "1384473766",
+      "text": "Diversity is <span style=\"text-decoration: underline;\">not included in our policy/strategy/vision</span>.",
+      "score": 0
+    }, {
+      "id": "1384473767",
+      "text": "Diversity is <span style=\"text-decoration: underline;\">included</span> in our policy / strategy / vision, <span style=\"text-decoration: underline;\">but has little importance</span>.",
+      "score": 0
+    }, {
+      "id": "1384473768",
+      "text": "Diversity is <span style=\"text-decoration: underline;\">included</span> in our policy / strategy / vision <span style=\"text-decoration: underline;\">and is somewhat important</span>.",
+      "score": 0
+    }, {
+      "id": "1384473769",
+      "text": "Diversity is <span style=\"text-decoration: underline;\">included and is an essential part</span> of our policy / strategy / vision.",
+      "score": 0
+    }]
+  }, {
+    "id": "200512965",
+    "text": "When thinking about my school and\u00a0diversity\u2019s role (in terms of gender, socio-economic, ethnic, language, cultural and religious backgrounds) in the school\u2019s activities",
+    "choices": [{
+      "id": "1384579404",
+      "text": "Diversity is <span style=\"text-decoration: underline;\">never incorporated</span> in discussions and activities in the classroom or otherwise.",
+      "score": 0
+    }, {
+      "id": "1384579405",
+      "text": "Diversity is <span style=\"text-decoration: underline;\">sometimes (once a week or less)</span> incorporated into discussions and activities in the classroom or otherwise.",
+      "score": 0
+    }, {
+      "id": "1384579406",
+      "text": "Diversity is <span style=\"text-decoration: underline;\">often (2-3 times a week) incorporated</span> into regular discussions and activities in the classroom and otherwise",
+      "score": 0
+    }, {
+      "id": "1384579407",
+      "text": "Diversity is <span style=\"text-decoration: underline;\">regularly (4 times a week or more)</span> incorporated into discussions and activities in the classroom and otherwise.",
+      "score": 0
+    }]
+  }, {
+    "id": "200514209",
+    "text": "When thinking about my school and\u00a0global competence in the school curriculum\u00a0e.g. knowledge and skills\u00a0students are expected to learn; units and lessons that teachers teach; assignments and projects given to students; tests, assessments, and other methods used to evaluate student learning",
+    "choices": [{
+      "id": "1384588322",
+      "text": "Teaching global competence is <span style=\"text-decoration: underline;\">not included</span> in our school\u2019s curriculum and we have <span style=\"text-decoration: underline;\">no plans to include it</span> in the foreseeable future.",
+      "score": 0
+    }, {
+      "id": "1384588323",
+      "text": "Teaching global competence <span style=\"text-decoration: underline;\">is not included</span> in our school\u2019s curriculum, but we <span style=\"text-decoration: underline;\">plan to include it in the next 2 to 3 years.</span>",
+      "score": 0
+    }, {
+      "id": "1384588324",
+      "text": "Teaching global competence <span style=\"text-decoration: underline;\">is not included</span> in our school\u2019s curriculum but we <span style=\"text-decoration: underline;\">plan to include it within the next year or sooner.</span>",
+      "score": 0
+    }, {
+      "id": "1384588325",
+      "text": "Teaching global competence <span style=\"text-decoration: underline;\">is included currently</span> in our school\u2019s curriculum.",
+      "score": 0
+    }]
+  }, {
+    "id": "202158222",
+    "text": "When thinking about my school and teaching topics related to global issues in the classroom e.g. climate change, current world events (political and economical, refugee crisis, poverty, equality, human rights and sustainability)",
+    "choices": [{
+      "id": "1395519215",
+      "text": "We <span style=\"text-decoration: underline;\">never teach</span> topics related to global issues in our classrooms.",
+      "score": 0
+    }, {
+      "id": "1395519217",
+      "text": "We <span style=\"text-decoration: underline;\">hardly ever (once a month or less)</span> teach topics related to global issues in our classrooms.",
+      "score": 0
+    }, {
+      "id": "1395519219",
+      "text": "We <span style=\"text-decoration: underline;\">occasionally (2-3 times a month)</span> teach topics related to global issues in our classroom.",
+      "score": 0
+    }, {
+      "id": "1395519220",
+      "text": "We <span style=\"text-decoration: underline;\">regularly (4 times a month or more)</span> teach topics related to global issues in our classrooms.",
+      "score": 0
+    }]
+  }],
+  [{
+    "id": "202159387",
+    "text": "Teaching topics related to global issues in the classroom: subjects",
+    "choices": [{
+      "id": "1395527661",
+      "text": "We teach global issues <span style=\"text-decoration: underline;\">only in subjects directly related</span> to global matters, e.g. Geography, History, Social Studies.",
+      "score": 0
+    }, {
+      "id": "1395527662",
+      "text": "We teach global issues <span style=\"text-decoration: underline;\">in most subjects, both directly and indirectly related</span> to global matters, e.g. Geography, History, Social Studies, Sciences, Math, Literature, Arts.",
+      "score": 0
+    }]
+  }, {
+    "id": "202161296",
+    "text": "When thinking about my school and opportunities for students to discuss and form opinions around current global issues e.g. debate clubs, small group exercises, essay contests, project based learning",
+    "choices": [{
+      "id": "1395539605",
+      "text": "We <span style=\"text-decoration: underline;\">never offer</span> opportunities for students to discuss and form opinions around current global issues.",
+      "score": 0
+    }, {
+      "id": "1395539606",
+      "text": "We <span style=\"text-decoration: underline;\">hardly ever (once a month or less)</span> offer opportunities for students to discuss and form opinions around current global issues.",
+      "score": 0
+    }, {
+      "id": "1395539607",
+      "text": "We <span style=\"text-decoration: underline;\">occasionally (2-3 times a month)</span> offer opportunities for students to discuss and form opinions around current global issues.",
+      "score": 0
+    }, {
+      "id": "1395539608",
+      "text": "We <span style=\"text-decoration: underline;\">regularly (4 times a month or more)</span> offer opportunities for students to discuss and form opinions around current global issues.",
+      "score": 0
+    }]
+  }, {
+    "id": "202163350",
+    "text": "When thinking about my school and language of instruction, i.e. the language used to teach most classes, except language courses",
+    "choices": [{
+      "id": "1395553362",
+      "text": "We teach most of the classes in <span style=\"text-decoration: underline;\">1</span> language.",
+      "score": 0
+    }, {
+      "id": "1395553363",
+      "text": "We teach most of our classes in <span style=\"text-decoration: underline;\">2</span> languages.",
+      "score": 0
+    }, {
+      "id": "1395553364",
+      "text": "We teach most of our classes in <span style=\"text-decoration: underline;\">3</span> languages.",
+      "score": 0
+    }, {
+      "id": "1395553365",
+      "text": "We teach most of our classes in <span style=\"text-decoration: underline;\">4 or more</span> languages.",
+      "score": 0
+    }]
+  }],
+  [{
+    "id": "202163846",
+    "text": "Is any language used for teaching not a\u00a0majority and/or official language?",
+    "choices": [{
+      "id": "1395556369",
+      "text": "No.",
+      "score": 0
+    }, {
+      "id": "1395556370",
+      "text": "Yes.",
+      "score": 0
+    }, {
+      "id": "1395556372",
+      "text": "Not applicable (there is no majority and/or official language in our country / region).",
+      "score": 0
+    }]
+  }, {
+    "id": "202164891",
+    "text": "When thinking about my school and opportunities for additional language learning",
+    "choices": [{
+      "id": "1395563095",
+      "text": "We do <span style=\"text-decoration: underline;\">not offer any courses</span> where our students can learn foreign or other local languages.",
+      "score": 0
+    }, {
+      "id": "1395563096",
+      "text": "We offer a course where our students can learn <span style=\"text-decoration: underline;\">1</span> foreign or other local language.",
+      "score": 0
+    }, {
+      "id": "1395563097",
+      "text": "We offer courses where students can learn <span style=\"text-decoration: underline;\">2</span> foreign or other local languages.",
+      "score": 0
+    }, {
+      "id": "1395563098",
+      "text": "We offer courses where students can learn <span style=\"text-decoration: underline;\">3 or more</span> foreign or other local languages.",
+      "score": 0
+    }]
+  }, {
+    "id": "202167261",
+    "text": "When thinking about my school and organizing intercultural events at school e.g. multicultural fairs, harmony days, intercultural, cross-cultural or diversity workshops for students",
+    "choices": [{
+      "id": "1395579402",
+      "text": "We have <span style=\"text-decoration: underline;\">never organized</span> intercultural events at school.",
+      "score": 0
+    }, {
+      "id": "1395579403",
+      "text": "We <span style=\"text-decoration: underline;\">hardly ever (less than 3 times in the past 5 years)</span> organize intercultural events at school.",
+      "score": 0
+    }, {
+      "id": "1395579404",
+      "text": "We <span style=\"text-decoration: underline;\">occasionally (once a year in the past 5 years)</span> organize intercultural events at school.",
+      "score": 0
+    }, {
+      "id": "1395579405",
+      "text": "We <span style=\"text-decoration: underline;\">regularly (2 or more times a year in the past 5 years)</span> organize intercultural events at school.",
+      "score": 0
+    }]
+  }],
+  [{
+    "id": "202178067",
+    "text": "Would the school be interested in organizing more intercultural events in the future?",
+    "choices": [{
+      "id": "1395649141",
+      "text": "No",
+      "score": 0
+    }, {
+      "id": "1395649140",
+      "text": "Yes",
+      "score": 0
+    }]
+  }, {
+    "id": "202187702",
+    "text": "When thinking about my school and\u00a0Professional development/training opportunities for school faculty (teachers) and other staff to develop global competence e.g. intercultural, cross-cultural or diversity workshops",
+    "choices": [{
+      "id": "1395713937",
+      "text": "We <span style=\"text-decoration: underline;\">never</span> have intercultural training opportunities for teachers and other staff at school to develop global competence.",
+      "score": 0
+    }, {
+      "id": "1395713938",
+      "text": "We <span style=\"text-decoration: underline;\">hardly ever (less than 3 times in the past 5 years)</span> have intercultural training opportunities for teachers and other staff at school to develop global competence.",
+      "score": 0
+    }, {
+      "id": "1395713939",
+      "text": "We <span style=\"text-decoration: underline;\">occasionally (once a year in the past 5 years)</span> have intercultural training opportunities for teachers and other staff at school to develop global competence.",
+      "score": 0
+    }, {
+      "id": "1395713940",
+      "text": "We <span style=\"text-decoration: underline;\">regularly (2 or more times a year in the past 5 years)</span> have intercultural training opportunities for teachers and other staff at school to develop global competence.",
+      "score": 0
+    }]
+  }, {
+    "id": "202188776",
+    "text": "When thinking about my school and participation in international projects <br>e.g. virtual exchanges, collaborative projects with schools abroad, \u201cpen pal\u201d programs",
+    "choices": [{
+      "id": "1395720532",
+      "text": "We <span style=\"text-decoration: underline;\">never</span> participate in any international projects.",
+      "score": 0
+    }, {
+      "id": "1395720533",
+      "text": "We <span style=\"text-decoration: underline;\">hardly ever (less than 3 times in the past 5 years)</span> participate in international projects.",
+      "score": 0
+    }, {
+      "id": "1395720534",
+      "text": "We <span style=\"text-decoration: underline;\">occasionally (once a year in the past 5 years)</span> participate in international projects.",
+      "score": 0
+    }, {
+      "id": "1395720535",
+      "text": "We <span style=\"text-decoration: underline;\">regularly (2 or more times a year in the past 5 years)</span> participate\u00a0in international projects.",
+      "score": 0
+    }]
+  }],
+  [{
+    "id": "202189262",
+    "text": "Would the school be interested in participating in more international projects in in the future?",
+    "choices": [{
+      "id": "1395723915",
+      "text": "No.",
+      "score": 0
+    }, {
+      "id": "1395723917",
+      "text": "Yes.",
+      "score": 0
+    }]
+  }, {
+    "id": "202190167",
+    "text": "When thinking about my school and hosting study abroad/exchange/international students",
+    "choices": [{
+      "id": "1395729129",
+      "text": "We have <span style=\"text-decoration: underline;\">never</span> hosted any study abroad / exchange / international students (or other students in similar programs).",
+      "score": 0
+    }, {
+      "id": "1395729130",
+      "text": "We have <span style=\"text-decoration: underline;\">hardly ever (once in the past 5 years)</span> hosted study abroad / exchange/ international students (or other students in similar programs).",
+      "score": 0
+    }, {
+      "id": "1395729131",
+      "text": "We have <span style=\"text-decoration: underline;\">occasionally (1-3 times in the past 5 years)</span> hosted study abroad / exchange / international student (or other student in similar programs).",
+      "score": 0
+    }, {
+      "id": "1395729132",
+      "text": "We have <span style=\"text-decoration: underline;\">regularly (once a year for the past 5 years or more)</span> hosted study abroad / exchange / international students (or students in other similar programs).",
+      "score": 0
+    }]
+  }],
+  [{
+    "id": "202190704",
+    "text": "On average, how many students does the school host in the years they have participated in these programs?",
+    "choices": [{
+      "id": "1395732471",
+      "text": "<span style=\"text-decoration: underline;\">1</span> student.",
+      "score": 0
+    }, {
+      "id": "1395732472",
+      "text": "<span style=\"text-decoration: underline;\">2-4</span> students.",
+      "score": 0
+    }, {
+      "id": "1395732473",
+      "text": "<span style=\"text-decoration: underline;\">5 or more</span> students.",
+      "score": 0
+    }]
+  }, {
+    "id": "202191763",
+    "text": "When thinking about my school and sending our students on study abroad exchange/international programs",
+    "choices": [{
+      "id": "1395739013",
+      "text": "We have <span style=\"text-decoration: underline;\">never</span> participated in any study abroad / exchange / international experience programs for students.",
+      "score": 0
+    }, {
+      "id": "1395739015",
+      "text": "We have <span style=\"text-decoration: underline;\">hardly (once in the past 5 years)</span> participated in study abroad / exchange / international experience programs for students.",
+      "score": 0
+    }, {
+      "id": "1395739016",
+      "text": "We have <span style=\"text-decoration: underline;\">occasionally (1-3 times in the past 5 years)</span> participated in study abroad / exchange / international experience programs for students.",
+      "score": 0
+    }, {
+      "id": "1395739019",
+      "text": "We have <span style=\"text-decoration: underline;\">regularly (once a year for the past 5 years or more)</span> participated in study abroad / exchange / international experience programs for students.",
+      "score": 0
+    }]
+  }],
+  [{
+    "id": "202193785",
+    "text": "On average, how many students from the school go abroad through these programs in the years that the school has participated in these programs?",
+    "choices": [{
+      "id": "1395752460",
+      "text": "<span style=\"text-decoration: underline;\">1</span> student.",
+      "score": 0
+    }, {
+      "id": "1395752461",
+      "text": "<span style=\"text-decoration: underline;\">2-4</span> students.",
+      "score": 0
+    }, {
+      "id": "1395752462",
+      "text": "<span style=\"text-decoration: underline;\">5 or more</span> students.",
+      "score": 0
+    }]
+  }, {
+    "id": "202194997",
+    "text": "When thinking about my school and engagement in exchange programs for teachers (hosting and/or sending)",
+    "choices": [{
+      "id": "1395760171",
+      "text": "We have <span style=\"text-decoration: underline;\">never</span> participated (sending or hosting) in any exchange program for teachers.",
+      "score": 0
+    }, {
+      "id": "1395760173",
+      "text": "We have <span style=\"text-decoration: underline;\">hardly ever (once in the past 5 years)</span> participated (sending or hosting) in exchange programs for teachers.",
+      "score": 0
+    }, {
+      "id": "1395760176",
+      "text": "We have <span style=\"text-decoration: underline;\">occasionally (1-3 times in the past 5 years)</span> participated (sending or hosting) in exchange programs for teachers.",
+      "score": 0
+    }, {
+      "id": "1395760177",
+      "text": "We have <span style=\"text-decoration: underline;\">regularly (once a year for the past 5 years or more)</span> participated (sending or hosting) in exchange programs for teachers.",
+      "score": 0
+    }]
+  }],
+  [{
+    "id": "202196470",
+    "text": "Country:",
+    "choices": [{
+      "id": "1662002090",
+      "text": "Afghanistan",
+      "score": 0
+    }, {
+      "id": "1662002094",
+      "text": "Albania",
+      "score": 0
+    }, {
+      "id": "1662002097",
+      "text": "Germany",
+      "score": 0
+    }, {
+      "id": "1662002099",
+      "text": "Andorra",
+      "score": 0
+    }, {
+      "id": "1662002101",
+      "text": "Angola",
+      "score": 0
+    }, {
+      "id": "1662002103",
+      "text": "Anguilla",
+      "score": 0
+    }, {
+      "id": "1662002104",
+      "text": "Antarctica",
+      "score": 0
+    }, {
+      "id": "1662002106",
+      "text": "Antigua and Barbuda",
+      "score": 0
+    }, {
+      "id": "1662002108",
+      "text": "Netherlands Antilles",
+      "score": 0
+    }, {
+      "id": "1662002109",
+      "text": "Saudi Arabia",
+      "score": 0
+    }, {
+      "id": "1662002111",
+      "text": "Algeria",
+      "score": 0
+    }, {
+      "id": "1662002112",
+      "text": "Argentina",
+      "score": 0
+    }, {
+      "id": "1662002113",
+      "text": "Armenia",
+      "score": 0
+    }, {
+      "id": "1662002114",
+      "text": "Aruba",
+      "score": 0
+    }, {
+      "id": "1662002115",
+      "text": "Australia",
+      "score": 0
+    }, {
+      "id": "1662002116",
+      "text": "Austria",
+      "score": 0
+    }, {
+      "id": "1662002117",
+      "text": "Azerbaijan",
+      "score": 0
+    }, {
+      "id": "1662002118",
+      "text": "Bahamas",
+      "score": 0
+    }, {
+      "id": "1662002119",
+      "text": "Bahrain",
+      "score": 0
+    }, {
+      "id": "1662002120",
+      "text": "Bangladesh",
+      "score": 0
+    }, {
+      "id": "1662002121",
+      "text": "Barbados",
+      "score": 0
+    }, {
+      "id": "1662002122",
+      "text": "Belgium",
+      "score": 0
+    }, {
+      "id": "1662002123",
+      "text": "Belize",
+      "score": 0
+    }, {
+      "id": "1662002124",
+      "text": "Benin",
+      "score": 0
+    }, {
+      "id": "1662002125",
+      "text": "Bermuda",
+      "score": 0
+    }, {
+      "id": "1662002126",
+      "text": "Belarus",
+      "score": 0
+    }, {
+      "id": "1662002127",
+      "text": "Bolivia",
+      "score": 0
+    }, {
+      "id": "1662002128",
+      "text": "Bonaire, Saint Eustatius and Saba",
+      "score": 0
+    }, {
+      "id": "1662002129",
+      "text": "Bosnia-Herzegovina",
+      "score": 0
+    }, {
+      "id": "1662002130",
+      "text": "Botswana",
+      "score": 0
+    }, {
+      "id": "1662002131",
+      "text": "Brazil",
+      "score": 0
+    }, {
+      "id": "1662002132",
+      "text": "Brunei Darussalam",
+      "score": 0
+    }, {
+      "id": "1662002133",
+      "text": "Bulgaria",
+      "score": 0
+    }, {
+      "id": "1662002134",
+      "text": "Burkina Faso",
+      "score": 0
+    }, {
+      "id": "1662002135",
+      "text": "Burundi",
+      "score": 0
+    }, {
+      "id": "1662002136",
+      "text": "Bhutan",
+      "score": 0
+    }, {
+      "id": "1662002137",
+      "text": "Cape Verde",
+      "score": 0
+    }, {
+      "id": "1662002138",
+      "text": "Cambodia",
+      "score": 0
+    }, {
+      "id": "1662002139",
+      "text": "Cameroon",
+      "score": 0
+    }, {
+      "id": "1662002140",
+      "text": "Canada",
+      "score": 0
+    }, {
+      "id": "1662002141",
+      "text": "Catalonia",
+      "score": 0
+    }, {
+      "id": "1662002142",
+      "text": "Chad",
+      "score": 0
+    }, {
+      "id": "1662002143",
+      "text": "Chile",
+      "score": 0
+    }, {
+      "id": "1662002144",
+      "text": "China (Peoples Republic of)",
+      "score": 0
+    }, {
+      "id": "1662002145",
+      "text": "Cyprus",
+      "score": 0
+    }, {
+      "id": "1662002146",
+      "text": "Vatican City State",
+      "score": 0
+    }, {
+      "id": "1662002147",
+      "text": "Colombia",
+      "score": 0
+    }, {
+      "id": "1662002148",
+      "text": "Comoros",
+      "score": 0
+    }, {
+      "id": "1662002149",
+      "text": "Congo (Republic of the)",
+      "score": 0
+    }, {
+      "id": "1662002150",
+      "text": "Korea (North)",
+      "score": 0
+    }, {
+      "id": "1662002151",
+      "text": "Korea (South)",
+      "score": 0
+    }, {
+      "id": "1662002152",
+      "text": "Ivory Coast, C\u00f4te d'Ivoire",
+      "score": 0
+    }, {
+      "id": "1662002153",
+      "text": "Costa Rica",
+      "score": 0
+    }, {
+      "id": "1662002154",
+      "text": "Croatia",
+      "score": 0
+    }, {
+      "id": "1662002155",
+      "text": "Cuba",
+      "score": 0
+    }, {
+      "id": "1662002156",
+      "text": "Cura\u00e7\u00e3o",
+      "score": 0
+    }, {
+      "id": "1662002157",
+      "text": "Denmark",
+      "score": 0
+    }, {
+      "id": "1662002158",
+      "text": "Dominica",
+      "score": 0
+    }, {
+      "id": "1662002159",
+      "text": "Ecuador",
+      "score": 0
+    }, {
+      "id": "1662002160",
+      "text": "Egypt",
+      "score": 0
+    }, {
+      "id": "1662002161",
+      "text": "El Salvador",
+      "score": 0
+    }, {
+      "id": "1662002162",
+      "text": "United Arab Emirates",
+      "score": 0
+    }, {
+      "id": "1662002163",
+      "text": "Eritrea",
+      "score": 0
+    }, {
+      "id": "1662002164",
+      "text": "Slovakia",
+      "score": 0
+    }, {
+      "id": "1662002165",
+      "text": "Slovenia",
+      "score": 0
+    }, {
+      "id": "1662002166",
+      "text": "Spain",
+      "score": 0
+    }, {
+      "id": "1662002167",
+      "text": "United States of America (USA)",
+      "score": 0
+    }, {
+      "id": "1662002168",
+      "text": "Estonia",
+      "score": 0
+    }, {
+      "id": "1662002169",
+      "text": "Ethiopia",
+      "score": 0
+    }, {
+      "id": "1662002170",
+      "text": "Philippines",
+      "score": 0
+    }, {
+      "id": "1662002171",
+      "text": "Finland",
+      "score": 0
+    }, {
+      "id": "1662002172",
+      "text": "Fiji",
+      "score": 0
+    }, {
+      "id": "1662002173",
+      "text": "France",
+      "score": 0
+    }, {
+      "id": "1662002174",
+      "text": "Gabon",
+      "score": 0
+    }, {
+      "id": "1662002175",
+      "text": "Gambia (The)",
+      "score": 0
+    }, {
+      "id": "1662002176",
+      "text": "Georgia",
+      "score": 0
+    }, {
+      "id": "1662002177",
+      "text": "Ghana",
+      "score": 0
+    }, {
+      "id": "1662002178",
+      "text": "Gibraltar",
+      "score": 0
+    }, {
+      "id": "1662002179",
+      "text": "Grenada",
+      "score": 0
+    }, {
+      "id": "1662002180",
+      "text": "Greece",
+      "score": 0
+    }, {
+      "id": "1662002181",
+      "text": "Greenland",
+      "score": 0
+    }, {
+      "id": "1662002182",
+      "text": "Guadeloupe",
+      "score": 0
+    }, {
+      "id": "1662002183",
+      "text": "Guam",
+      "score": 0
+    }, {
+      "id": "1662002184",
+      "text": "Guatemala",
+      "score": 0
+    }, {
+      "id": "1662002185",
+      "text": "French Guiana",
+      "score": 0
+    }, {
+      "id": "1662002186",
+      "text": "Guernsey",
+      "score": 0
+    }, {
+      "id": "1662002187",
+      "text": "Guinea",
+      "score": 0
+    }, {
+      "id": "1662002188",
+      "text": "Equatorial Guinea",
+      "score": 0
+    }, {
+      "id": "1662002190",
+      "text": "Guinea-Bissau",
+      "score": 0
+    }, {
+      "id": "1662002191",
+      "text": "Guyana",
+      "score": 0
+    }, {
+      "id": "1662002192",
+      "text": "Haiti",
+      "score": 0
+    }, {
+      "id": "1662002193",
+      "text": "Netherlands",
+      "score": 0
+    }, {
+      "id": "1662002194",
+      "text": "Honduras",
+      "score": 0
+    }, {
+      "id": "1662002195",
+      "text": "Hong Kong",
+      "score": 0
+    }, {
+      "id": "1662002196",
+      "text": "Hungary",
+      "score": 0
+    }, {
+      "id": "1662002197",
+      "text": "India",
+      "score": 0
+    }, {
+      "id": "1662002198",
+      "text": "Indonesia",
+      "score": 0
+    }, {
+      "id": "1662002199",
+      "text": "Iran",
+      "score": 0
+    }, {
+      "id": "1662002200",
+      "text": "Iraq",
+      "score": 0
+    }, {
+      "id": "1662002201",
+      "text": "Northern Ireland",
+      "score": 0
+    }, {
+      "id": "1662002202",
+      "text": "Ireland",
+      "score": 0
+    }, {
+      "id": "1662002203",
+      "text": "Ascension Island",
+      "score": 0
+    }, {
+      "id": "1662002204",
+      "text": "Jersey",
+      "score": 0
+    }, {
+      "id": "1662002205",
+      "text": "Isle of Man",
+      "score": 0
+    }, {
+      "id": "1662002206",
+      "text": "Christmas Island",
+      "score": 0
+    }, {
+      "id": "1662002207",
+      "text": "Norfolk Island",
+      "score": 0
+    }, {
+      "id": "1662002208",
+      "text": "Iceland",
+      "score": 0
+    }, {
+      "id": "1662002209",
+      "text": "Cayman Islands",
+      "score": 0
+    }, {
+      "id": "1662002210",
+      "text": "Cocos/Keeling Islands",
+      "score": 0
+    }, {
+      "id": "1662002211",
+      "text": "Cook Islands",
+      "score": 0
+    }, {
+      "id": "1662002212",
+      "text": "Faroe Islands",
+      "score": 0
+    }, {
+      "id": "1662002213",
+      "text": "South Georgia and the South Sandwich Islands",
+      "score": 0
+    }, {
+      "id": "1662002214",
+      "text": "Heard Island and McDonald Islands",
+      "score": 0
+    }, {
+      "id": "1662002215",
+      "text": "Falkland Islands",
+      "score": 0
+    }, {
+      "id": "1662002216",
+      "text": "Northern Mariana Islands",
+      "score": 0
+    }, {
+      "id": "1662002217",
+      "text": "Marshall Islands",
+      "score": 0
+    }, {
+      "id": "1662002218",
+      "text": "Pitcairn Islands",
+      "score": 0
+    }, {
+      "id": "1662002219",
+      "text": "Solomon Islands",
+      "score": 0
+    }, {
+      "id": "1662002220",
+      "text": "Svalbard and Jan Mayen Islands",
+      "score": 0
+    }, {
+      "id": "1662002221",
+      "text": "Turks and Caicos Islands",
+      "score": 0
+    }, {
+      "id": "1662002222",
+      "text": "British Virgin Islands",
+      "score": 0
+    }, {
+      "id": "1662002223",
+      "text": "US Virgin Islands",
+      "score": 0
+    }, {
+      "id": "1662002224",
+      "text": "Israel",
+      "score": 0
+    }, {
+      "id": "1662002225",
+      "text": "Italy",
+      "score": 0
+    }, {
+      "id": "1662002226",
+      "text": "Jamaica",
+      "score": 0
+    }, {
+      "id": "1662002227",
+      "text": "Japan",
+      "score": 0
+    }, {
+      "id": "1662002228",
+      "text": "Jordan",
+      "score": 0
+    }, {
+      "id": "1662002229",
+      "text": "Kazakhstan",
+      "score": 0
+    }, {
+      "id": "1662002230",
+      "text": "Kenya",
+      "score": 0
+    }, {
+      "id": "1662002231",
+      "text": "Kyrgyzstan",
+      "score": 0
+    }, {
+      "id": "1662002232",
+      "text": "Kiribati",
+      "score": 0
+    }, {
+      "id": "1662002233",
+      "text": "Kosovo",
+      "score": 0
+    }, {
+      "id": "1662002234",
+      "text": "Kuwait",
+      "score": 0
+    }, {
+      "id": "1662002235",
+      "text": "Laos",
+      "score": 0
+    }, {
+      "id": "1662002237",
+      "text": "Lesotho",
+      "score": 0
+    }, {
+      "id": "1662002239",
+      "text": "Latvia",
+      "score": 0
+    }, {
+      "id": "1662002240",
+      "text": "Lebanon",
+      "score": 0
+    }, {
+      "id": "1662002241",
+      "text": "Liberia",
+      "score": 0
+    }, {
+      "id": "1662002242",
+      "text": "Libya",
+      "score": 0
+    }, {
+      "id": "1662002243",
+      "text": "Liechtenstein",
+      "score": 0
+    }, {
+      "id": "1662002244",
+      "text": "Lithuania",
+      "score": 0
+    }, {
+      "id": "1662002245",
+      "text": "Luxembourg",
+      "score": 0
+    }, {
+      "id": "1662002246",
+      "text": "Macau",
+      "score": 0
+    }, {
+      "id": "1662002247",
+      "text": "Macedonia (Republic of)",
+      "score": 0
+    }, {
+      "id": "1662002248",
+      "text": "Madagascar",
+      "score": 0
+    }, {
+      "id": "1662002249",
+      "text": "Malaysia",
+      "score": 0
+    }, {
+      "id": "1662002250",
+      "text": "Malawi",
+      "score": 0
+    }, {
+      "id": "1662002251",
+      "text": "Maldives",
+      "score": 0
+    }, {
+      "id": "1662002252",
+      "text": "Mali",
+      "score": 0
+    }, {
+      "id": "1662002253",
+      "text": "Malta",
+      "score": 0
+    }, {
+      "id": "1662002254",
+      "text": "Morocco",
+      "score": 0
+    }, {
+      "id": "1662002255",
+      "text": "Martinique",
+      "score": 0
+    }, {
+      "id": "1662002256",
+      "text": "Mauritius",
+      "score": 0
+    }, {
+      "id": "1662002257",
+      "text": "Mauritania",
+      "score": 0
+    }, {
+      "id": "1662002258",
+      "text": "Mayotte",
+      "score": 0
+    }, {
+      "id": "1662002259",
+      "text": "Mexico",
+      "score": 0
+    }, {
+      "id": "1662002260",
+      "text": "Micronesia (Federated States of)",
+      "score": 0
+    }, {
+      "id": "1662002261",
+      "text": "Moldova",
+      "score": 0
+    }, {
+      "id": "1662002262",
+      "text": "Monaco",
+      "score": 0
+    }, {
+      "id": "1662002263",
+      "text": "Mongolia",
+      "score": 0
+    }, {
+      "id": "1662002264",
+      "text": "Montenegro",
+      "score": 0
+    }, {
+      "id": "1662002265",
+      "text": "Montserrat",
+      "score": 0
+    }, {
+      "id": "1662002266",
+      "text": "Mozambique",
+      "score": 0
+    }, {
+      "id": "1662002267",
+      "text": "Myanmar",
+      "score": 0
+    }, {
+      "id": "1662002268",
+      "text": "Namibia",
+      "score": 0
+    }, {
+      "id": "1662002269",
+      "text": "Nauru",
+      "score": 0
+    }, {
+      "id": "1662002270",
+      "text": "Nepal",
+      "score": 0
+    }, {
+      "id": "1662002271",
+      "text": "Nicaragua",
+      "score": 0
+    }, {
+      "id": "1662002272",
+      "text": "Niger",
+      "score": 0
+    }, {
+      "id": "1662002273",
+      "text": "Nigeria",
+      "score": 0
+    }, {
+      "id": "1662002274",
+      "text": "Niue",
+      "score": 0
+    }, {
+      "id": "1662002275",
+      "text": "Norway",
+      "score": 0
+    }, {
+      "id": "1662002276",
+      "text": "New Caledonia",
+      "score": 0
+    }, {
+      "id": "1662002277",
+      "text": "New Zealand",
+      "score": 0
+    }, {
+      "id": "1662002278",
+      "text": "Oman",
+      "score": 0
+    }, {
+      "id": "1662002279",
+      "text": "Netherlands (Holland)",
+      "score": 0
+    }, {
+      "id": "1662002280",
+      "text": "Pakistan",
+      "score": 0
+    }, {
+      "id": "1662002281",
+      "text": "Palau",
+      "score": 0
+    }, {
+      "id": "1662002282",
+      "text": "Palestinian Territories",
+      "score": 0
+    }, {
+      "id": "1662002283",
+      "text": "Panama",
+      "score": 0
+    }, {
+      "id": "1662002284",
+      "text": "Papua New Guinea",
+      "score": 0
+    }, {
+      "id": "1662002285",
+      "text": "Paraguay",
+      "score": 0
+    }, {
+      "id": "1662002286",
+      "text": "Peru",
+      "score": 0
+    }, {
+      "id": "1662002287",
+      "text": "French Polynesia",
+      "score": 0
+    }, {
+      "id": "1662002288",
+      "text": "Poland",
+      "score": 0
+    }, {
+      "id": "1662002289",
+      "text": "Portugal",
+      "score": 0
+    }, {
+      "id": "1662002290",
+      "text": "Puerto Rico",
+      "score": 0
+    }, {
+      "id": "1662002291",
+      "text": "Qatar",
+      "score": 0
+    }, {
+      "id": "1662002292",
+      "text": "United Kingdom (UK)",
+      "score": 0
+    }, {
+      "id": "1662002293",
+      "text": "Central African Republic",
+      "score": 0
+    }, {
+      "id": "1662002294",
+      "text": "Czech Republic",
+      "score": 0
+    }, {
+      "id": "1662002295",
+      "text": "Democratic Republic of the Congo",
+      "score": 0
+    }, {
+      "id": "1662002296",
+      "text": "Dominican Republic",
+      "score": 0
+    }, {
+      "id": "1662002297",
+      "text": "R\u00e9union",
+      "score": 0
+    }, {
+      "id": "1662002298",
+      "text": "Rwanda",
+      "score": 0
+    }, {
+      "id": "1662002299",
+      "text": "Romania",
+      "score": 0
+    }, {
+      "id": "1662002300",
+      "text": "Russia",
+      "score": 0
+    }, {
+      "id": "1662002301",
+      "text": "Western Sahara",
+      "score": 0
+    }, {
+      "id": "1662002302",
+      "text": "American Samoa",
+      "score": 0
+    }, {
+      "id": "1662002303",
+      "text": "Western Samoa",
+      "score": 0
+    }, {
+      "id": "1662002304",
+      "text": "Saint Kitts and Nevis",
+      "score": 0
+    }, {
+      "id": "1662002305",
+      "text": "San Marino",
+      "score": 0
+    }, {
+      "id": "1662002306",
+      "text": "Saint Maarten",
+      "score": 0
+    }, {
+      "id": "1662002307",
+      "text": "Saint-Pierre and Miquelon",
+      "score": 0
+    }, {
+      "id": "1662002313",
+      "text": "Saint Vincent and the Grenadines",
+      "score": 0
+    }, {
+      "id": "1662002315",
+      "text": "Saint Helena",
+      "score": 0
+    }, {
+      "id": "1662002318",
+      "text": "Saint Lucia",
+      "score": 0
+    }, {
+      "id": "1662002319",
+      "text": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+      "score": 0
+    }, {
+      "id": "1662002320",
+      "text": "Senegal",
+      "score": 0
+    }, {
+      "id": "1662002321",
+      "text": "Serbia",
+      "score": 0
+    }, {
+      "id": "1662002390",
+      "text": "Seychelles",
+      "score": 0
+    }, {
+      "id": "1662002391",
+      "text": "Sierra Leone",
+      "score": 0
+    }, {
+      "id": "1662002392",
+      "text": "Singapore",
+      "score": 0
+    }, {
+      "id": "1662002393",
+      "text": "Syria",
+      "score": 0
+    }, {
+      "id": "1662002394",
+      "text": "Somalia",
+      "score": 0
+    }, {
+      "id": "1662002395",
+      "text": "Sri Lanka",
+      "score": 0
+    }, {
+      "id": "1662002396",
+      "text": "Swaziland",
+      "score": 0
+    }, {
+      "id": "1662002397",
+      "text": "South Africa",
+      "score": 0
+    }, {
+      "id": "1662002398",
+      "text": "Sudan",
+      "score": 0
+    }, {
+      "id": "1662002400",
+      "text": "South Sudan",
+      "score": 0
+    }, {
+      "id": "1662002402",
+      "text": "Sweden",
+      "score": 0
+    }, {
+      "id": "1662002404",
+      "text": "Switzerland",
+      "score": 0
+    }, {
+      "id": "1662002405",
+      "text": "Suriname",
+      "score": 0
+    }, {
+      "id": "1662002408",
+      "text": "Thailand",
+      "score": 0
+    }, {
+      "id": "1662002409",
+      "text": "Taiwan",
+      "score": 0
+    }, {
+      "id": "1662002411",
+      "text": "Tanzania",
+      "score": 0
+    }, {
+      "id": "1662002413",
+      "text": "Tajikistan",
+      "score": 0
+    }, {
+      "id": "1662002416",
+      "text": "British Indian Ocean Territory",
+      "score": 0
+    }, {
+      "id": "1662002417",
+      "text": "French Southern and Antarctic Lands",
+      "score": 0
+    }, {
+      "id": "1662002418",
+      "text": "East Timor",
+      "score": 0
+    }, {
+      "id": "1662002419",
+      "text": "Togo",
+      "score": 0
+    }, {
+      "id": "1662002420",
+      "text": "Tokelau",
+      "score": 0
+    }, {
+      "id": "1662002421",
+      "text": "Tonga",
+      "score": 0
+    }, {
+      "id": "1662002422",
+      "text": "Trinidad and Tobago",
+      "score": 0
+    }, {
+      "id": "1662002423",
+      "text": "Tunisia",
+      "score": 0
+    }, {
+      "id": "1662002424",
+      "text": "Turkmenistan",
+      "score": 0
+    }, {
+      "id": "1662002425",
+      "text": "Turkey",
+      "score": 0
+    }, {
+      "id": "1662002426",
+      "text": "Tuvalu",
+      "score": 0
+    }, {
+      "id": "1662002427",
+      "text": "Ukraine",
+      "score": 0
+    }, {
+      "id": "1662002428",
+      "text": "Uganda",
+      "score": 0
+    }, {
+      "id": "1662002429",
+      "text": "Uruguay",
+      "score": 0
+    }, {
+      "id": "1662002430",
+      "text": "Uzbekistan",
+      "score": 0
+    }, {
+      "id": "1662002431",
+      "text": "Vanuatu",
+      "score": 0
+    }, {
+      "id": "1662002432",
+      "text": "Venezuela",
+      "score": 0
+    }, {
+      "id": "1662002433",
+      "text": "Vietnam",
+      "score": 0
+    }, {
+      "id": "1662002434",
+      "text": "Wallis and Futuna",
+      "score": 0
+    }, {
+      "id": "1662002436",
+      "text": "Yemen",
+      "score": 0
+    }, {
+      "id": "1662002438",
+      "text": "Djibouti",
+      "score": 0
+    }, {
+      "id": "1662002441",
+      "text": "Yugoslavia",
+      "score": 0
+    }, {
+      "id": "1662002444",
+      "text": "Zambia",
+      "score": 0
+    }]
+  }, {
+    "id": "202198087",
+    "text": "Locality population size:",
+    "choices": [{
+      "id": "1395781589",
+      "text": "1,999 or fewer inhabitants",
+      "score": 0
+    }, {
+      "id": "1395781590",
+      "text": "2,000 - 9,999 inhabitants",
+      "score": 0
+    }, {
+      "id": "1395781593",
+      "text": "10,000 - 49,999 inhabitants",
+      "score": 0
+    }, {
+      "id": "1395781594",
+      "text": "50,000 - 99,999 inhabitants",
+      "score": 0
+    }, {
+      "id": "1395781596",
+      "text": "100,000 - 499,999 inhabitants",
+      "score": 0
+    }, {
+      "id": "1395781597",
+      "text": "500,000 or more inhabitants",
+      "score": 0
+    }]
+  }, {
+    "id": "202199443",
+    "text": "Diversity as reflected in the faculty (teachers) and other staff:",
+    "choices": [{
+      "id": "1395791035",
+      "text": "Our faculty and staff is not diverse in terms of gender, socio-economic, ethnic, language, cultural and religious backgrounds when compared to how this diversity is reflected in our local community.",
+      "score": 0
+    }, {
+      "id": "1395791036",
+      "text": "Our faculty and staff is somewhat diverse in terms of gender, socio-economic, ethnic, language, cultural and religious backgrounds when compared to how this diversity is reflected in our local community.",
+      "score": 0
+    }, {
+      "id": "1395791037",
+      "text": "Our faculty and staff are very diverse in terms of gender, socio-economic, ethnic, language, cultural and religious backgrounds when compared to how this diversity is reflected in our local community.",
+      "score": 0
+    }, {
+      "id": "1395791038",
+      "text": "Our faculty and staff are extremely diverse in terms of gender, socio-economic, ethnic, language, cultural and religious backgrounds when compared to how this diversity is reflected in our local community.",
+      "score": 0
+    }]
+  }, {
+    "id": "202200089",
+    "text": "Do you have a teacher, staff member or department responsible for organising international projects? e.g. classroom exchange programs, virtual exchange programs, study opportunities abroad",
+    "choices": [{
+      "id": "1395796041",
+      "text": "We <span style=\"text-decoration: underline;\">do not have any</span> teacher, staff member or department responsible for organising international projects.",
+      "score": 0
+    }, {
+      "id": "1395796042",
+      "text": "We <span style=\"text-decoration: underline;\">have 1 teacher or staff member</span> responsible for organising international projects who is dedicated to international projects <span style=\"text-decoration: underline;\">part-time</span>.",
+      "score": 0
+    }, {
+      "id": "1395796044",
+      "text": "We <span style=\"text-decoration: underline;\">have 1 teacher or staff member</span> responsible for organising international projects who is dedicated to international projects <span style=\"text-decoration: underline;\">full-time</span>.",
+      "score": 0
+    }, {
+      "id": "1395796045",
+      "text": "We <span style=\"text-decoration: underline;\">have a department of 2 or more peopl</span>e responsible for organising international projects dedicated to this <span style=\"text-decoration: underline;\">full-time</span>.",
+      "score": 0
+    }]
+  }, {
+    "id": "202200760",
+    "text": "Teaching global competence:",
+    "choices": [{
+      "id": "1395800269",
+      "text": "<span style=\"text-decoration: underline;\">is not required</span> by the official (national) standards",
+      "score": 0
+    }, {
+      "id": "1395800270",
+      "text": "<span style=\"text-decoration: underline;\">is required</span> by the official (national) standards",
+      "score": 0
+    }]
+  }, {
+    "id": "202202149",
+    "text": "Number of students:",
+    "choices": [{
+      "id": "1395809699",
+      "text": "0-100",
+      "score": 0
+    }, {
+      "id": "1395809701",
+      "text": "101-500",
+      "score": 0
+    }, {
+      "id": "1395809702",
+      "text": "501-1000",
+      "score": 0
+    }, {
+      "id": "1395809703",
+      "text": "1000+",
+      "score": 0
+    }]
+  }, {
+    "id": "202202466",
+    "text": "Average number of students per classroom:",
+    "choices": [{
+      "id": "1395811724",
+      "text": "0-15",
+      "score": 0
+    }, {
+      "id": "1395811725",
+      "text": "16-29",
+      "score": 0
+    }, {
+      "id": "1395811726",
+      "text": "30-49",
+      "score": 0
+    }, {
+      "id": "1395811727",
+      "text": "50+",
+      "score": 0
+    }]
+  }, {
+    "id": "202202868",
+    "text": "Diversity as reflected in the student body:",
+    "choices": [{
+      "id": "1395814382",
+      "text": "Our student body is not as diverse in terms of socio-economic, ethnic, language, cultural and religious backgrounds when compared to how this diversity is reflected in our local community.",
+      "score": 0
+    }, {
+      "id": "1395814383",
+      "text": "Our student body is somewhat diverse in terms of socio-economic, ethnic, language, cultural and religious backgrounds when compared to how this diversity is reflected in our local community.",
+      "score": 0
+    }, {
+      "id": "1395814384",
+      "text": "Our student body is very diverse in terms of socio-economic, ethnic, language, cultural and religious backgrounds when compared to how this diversity is reflected in our local community.",
+      "score": 0
+    }, {
+      "id": "1395814385",
+      "text": "Our student body is extremely diverse in terms of socio-economic, ethnic, language, cultural and religious backgrounds when compared to how this diversity is reflected in our local community.",
+      "score": 0
+    }]
+  }, {
+    "id": "202203762",
+    "text": "Where did you find out about the AFS Global Competence Readiness Index?",
+    "choices": [{
+      "id": "1395819681",
+      "text": "AFS",
+      "score": 0
+    }, {
+      "id": "1395819682",
+      "text": "Teach for All",
+      "score": 0
+    }, {
+      "id": "1395819683",
+      "text": "Government Department",
+      "score": 0
+    }, {
+      "id": "1395819684",
+      "text": "Conference",
+      "score": 0
+    }, {
+      "id": "1395819685",
+      "text": "Social Media",
+      "score": 0
+    }, {
+      "id": "1395819686",
+      "text": "Educational Press/Article",
+      "score": 0
+    }]
+  }],
+  []
+]

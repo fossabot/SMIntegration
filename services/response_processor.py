@@ -12,10 +12,10 @@ class ResponseProcessor:
         self.response_endpoint = "{}/responses/{}/details".format(
             self.survey_endpoint, answer_id
         )
-        self.pages = {('64253305', 4), ('64263985', 5),
-                      ('55001294', 3), ('54998222', 2), ('54995830', 1)}
-        self.version = SurveyProcessor(answer_id).process_score()
+        # self.pages = {('64253305', 4), ('64263985', 5),
+        #               ('55001294', 3), ('54998222', 2), ('54995830', 1)}
         self.details = self.fetch_details()
+        self.version = SurveyProcessor(answer_id).process_score()
         self.recipient = self.details["pages"][1]["questions"][2]["answers"][0]["text"]
         self.language = self.details["metadata"]["respondent"]["language"]["value"]
 
@@ -27,7 +27,6 @@ class ResponseProcessor:
         return json.loads(r.content)
 
     def process(self):
-        self.fetch_details()
         try:
             EmailSender(
                 **{
@@ -49,5 +48,6 @@ class ResponseProcessor:
         pages_key_content = content['pages']
         pages_dict = dict((key, value) for (key, value) in zip(
             [x['id'] for x in pages_key_content], list(range(6))[1:]))
-        questions_dict = dict((x['headings']['heading'], x['id']) for x in list(x['questions'] for x in pages_key_content['questions']))
+        questions_dict = dict((x['headings']['heading'], x['id']) for x in list(
+            x['questions'] for x in pages_key_content['questions']))
         return questions_dict
