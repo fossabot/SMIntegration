@@ -5,8 +5,8 @@ import rollbar
 from services.email_sender import EmailSender
 from services.survey_processor import SurveyProcessor
 
-with open("assets/answers_scores.json", "r") as read_file:
-    answers_score_json = json.load(read_file)
+with open("assets/choices_scores.json", "r") as read_file:
+    choices_scores_json = json.load(read_file)
 
 
 class ResponseProcessor:
@@ -43,7 +43,7 @@ class ResponseProcessor:
         self.fetch_response()
         score = 0
         for i in self.answers:
-            score += answers_score_json[i]
+            score += choices_scores_json[i]
 
         if score >= 40:
             return 'leading'
