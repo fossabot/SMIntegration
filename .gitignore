@@ -8,3 +8,4 @@ venv/
 package-lock.json
 env.yaml
 assets
+.DS_Store
