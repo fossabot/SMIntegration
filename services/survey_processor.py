@@ -3,53 +3,10 @@ import json
 import requests
 import functools
 
-with open("assets/answers_scores.json", "r") as read_file:
-    answers_score_json = json.load(read_file)
-
 
 class SurveyProcessor:
-    def __init__(self, answer_id):
+    def __init__(self):
         self.survey_endpoint = 'https://api.surveymonkey.com/v3/surveys/164317910'
-        # self.responses = self.fetch_responses()
-        self.pages = None
-        self.questions = None
-        self.answers = None
-        self.answer_id = answer_id
-        self.score = None
-        self.feedback_email = None
-
-    def fetch_responses(self):
-        r = requests.get(self.survey_endpoint+'/responses',
-                         headers={'Authorization': os.getenv('SURVEY_MONKEY_API_KEY')})
-        content = json.loads(r.content)['data']
-        ids = [x['id'] for x in content]
-        return ids
-
-    def fetch_pages(self):
-        r = requests.get(self.survey_endpoint+'/pages',
-                         headers={'Authorization': os.getenv('SURVEY_MONKEY_API_KEY')})
-        content = json.loads(r.content)['data']
-        self.pages = dict((key, value) for (key, value) in zip(
-            [x['id'] for x in content], list(range(6))[1:]))
-
-    def fetch_response(self):
-        r = requests.get(self.survey_endpoint + '/responses/{}/details'.format(self.answer_id),
-                         headers={'Authorization': os.getenv('SURVEY_MONKEY_API_KEY')})
-        a = json.loads(r.content)
-
-        if list(a.keys())[0] is 'error':
-            print(a['error'])
-            return
-
-        response = []
-
-        for page in a['pages']:
-            for question in page['questions']:
-                for answer in question['answers']:
-                    response.append(answer.get('choice_id')) if answer.get(
-                        'choice_id') else ''
-
-        self.answers = response
 
     def fetch_details(self):
         r = requests.get(self.survey_endpoint + '/details',
@@ -59,7 +16,7 @@ class SurveyProcessor:
         pages = [page for page in content['pages']]
 
         filtered_answers = list(map(self.filter_score_answers, pages))
-        with open("./assets/answers_scores.json", "w") as fp:
+        with open("./assets/questions_interface.json", "w") as fp:
             json.dump(filtered_answers, fp)
 
     def filter_score_answers(self, page):
@@ -68,23 +25,18 @@ class SurveyProcessor:
 
         a = list(
             map(lambda question: {'id': question['id'], 'text': question['headings'][0]['heading'], 'choices': list(map(lambda x: {'id': x['id'], 'text': x['text'], 'score': 0}, question['answers']['choices']))}, questions))
+
         return a
 
-    def get_page_id(self, page_number):
-        return (list(self.pages.keys())[list(self.pages.values()).index(page_number)])
+    def process_scores(self):
+        with open("assets/questions_interface.json", "r") as read_file:
+            questions_json = [x for x in json.load(read_file) if x]
+        choices = []
+        for i in [x[0]['choices'] for x in questions_json if x]:
+            choices.extend(i)
 
-    def process_score(self):
-        self.fetch_response()
-        score = 0
-        for i in self.answers:
-            score += answers_score_json[i]
-        self.score = score
+        choice_score_dict = {choice['id']: choice['score']
+                             for choice in choices}
 
-        if score >= 40:
-            return 'leading'
-        elif score >= 29 or score <= 39:
-            return 'advancing'
-        elif score >= 16 or score <= 28:
-            return 'developing'
-        else:
-            return 'beginning'
+        with open("./assets/choices_scores.json", "w") as fp:
+            json.dump(choice_score_dict, fp)
