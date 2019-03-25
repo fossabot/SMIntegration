@@ -17,6 +17,7 @@ class ResponseProcessor:
         self.version = self.process_score()
         self.recipient = None
         self.language = 'en'
+        self.answers = None
 
     def fetch_response(self):
         r = requests.get(self.response_endpoint,
@@ -29,6 +30,7 @@ class ResponseProcessor:
 
         self.recipient = a["pages"][1]["questions"][2]["answers"][0]["text"]
         self.language = a["metadata"]["respondent"]["language"]["value"]
+        
         response = []
 
         for page in a['pages']:
@@ -45,23 +47,18 @@ class ResponseProcessor:
         for i in self.answers:
             score += choices_scores_json[i]
 
-        if score >= 40:
+        if score >= 81:
             return 'leading'
-        elif score >= 29 or score <= 39:
+        elif score >= 65 and score <= 80:
             return 'advancing'
-        elif score >= 16 or score <= 28:
+        elif score >= 51 and score <= 64:
             return 'developing'
         else:
             return 'beginning'
 
     def process(self):
+        self.fetch_response()
         try:
-            EmailSender(
-                **{
-                    "language": self.language,
-                    "version": self.version,
-                    "recipient": self.recipient,
-                }
-            ).send()
+            EmailSender(self.language, self.version, self.recipient).send()
         except:
             rollbar.report_exc_info()

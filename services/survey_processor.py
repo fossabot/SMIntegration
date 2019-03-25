@@ -32,12 +32,15 @@ class SurveyProcessor:
     def process_scores(self):
         with open("assets/questions_interface.json", "r") as read_file:
             questions_json = [x for x in json.load(read_file) if x]
+
         choices = []
-        for i in [x[0]['choices'] for x in questions_json if x]:
-            choices.extend(i)
+        for page in questions_json:
+            for question in page:
+                for choice in question['choices']:
+                    choices.append(choice)
 
         choice_score_dict = {choice['id']: choice['score']
-                             for choice in choices}
+                             for choice in choices if choice}
 
         with open("./assets/choices_scores.json", "w") as fp:
             json.dump(choice_score_dict, fp)

@@ -7,6 +7,7 @@ package:
     - node_modules/**
     - .gitignore
     - .git/**
+    - venv/**
 
 plugins:
   - serverless-google-cloudfunctions
