@@ -49,7 +49,7 @@ class EmailSender:
         self.activate_version()
         print(self.recipient, self.version)
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get("SENDGRID_API_KEY"))
-        from_email = Email("index@afs.org")
+        from_email = Email("index@afs.org", "AFS Global Competence Readiness Index for Schools")
         to_email = Email(self.recipient)
         subject = ""
         mail = Mail(from_email, subject, to_email)
