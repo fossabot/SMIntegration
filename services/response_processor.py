@@ -2,40 +2,63 @@ import os
 import json
 import requests
 import rollbar
-from services.email_sender import *
+from services.email_sender import EmailSender
+from services.survey_processor import SurveyProcessor
+
+with open("assets/choices_scores.json", "r") as read_file:
+    choices_scores_json = json.load(read_file)
 
 
 class ResponseProcessor:
-    def __init__(self, response_id):
-        self.survey_endpoint = "https://api.surveymonkey.com/v3/surveys/164317910"
-        self.response_endpoint = "{}/responses/{}/details".format(
-            self.survey_endpoint, response_id
+    def __init__(self, answer_id):
+        self.response_endpoint = "https://api.surveymonkey.com/v3/surveys/164317910/responses/{}/details".format(
+            answer_id
         )
-        # self.pages = {1:54995830, 2:54998222, 3:55001294, 4:55415136}
-        self.language = None
-        self.version = "beginning"
+        self.version = self.process_score()
         self.recipient = None
+        self.language = 'en'
+        self.answers = None
 
-    def fetch_details(self):
-        r = requests.get(
-            self.response_endpoint,
-            headers={"Authorization": os.getenv("SURVEY_MONKEY_API_KEY")},
-        )
-        content = json.loads(r.content)
-        self.language = content["metadata"]["respondent"]["language"]["value"]
-        self.recipient = content["pages"][1]["questions"][2]["answers"][0]["text"]
+    def fetch_response(self):
+        r = requests.get(self.response_endpoint,
+                         headers={'Authorization': os.getenv('SURVEY_MONKEY_API_KEY')})
+        a = json.loads(r.content)
+
+        if list(a.keys())[0] is 'error':
+            print(a['error'])
+            return
+
+        self.recipient = a["pages"][1]["questions"][2]["answers"][0]["text"]
+        self.language = a["metadata"]["respondent"]["language"]["value"]
+        
+        response = []
+
+        for page in a['pages']:
+            for question in page['questions']:
+                for answer in question['answers']:
+                    response.append(answer.get('choice_id')) if answer.get(
+                        'choice_id') else ''
+
+        self.answers = response
+
+    def process_score(self):
+        self.fetch_response()
+        score = 0
+        for i in self.answers:
+            score += choices_scores_json[i]
+
+        if score >= 81:
+            return 'leading'
+        elif score >= 65 and score <= 80:
+            return 'advancing'
+        elif score >= 51 and score <= 64:
+            return 'developing'
+        else:
+            return 'beginning'
 
     def process(self):
-        self.fetch_details()
+        self.fetch_response()
         try:
-            EmailSender(
-                **{
-                    "language": self.language,
-                    "version": self.version,
-                    "recipient": self.recipient,
-                }
-            ).send()
+            EmailSender(self.language, self.version, self.recipient).send()
         except:
             rollbar.report_exc_info()
-
-
