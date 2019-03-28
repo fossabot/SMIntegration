@@ -10,5 +10,8 @@
   },
   "dependencies": {
     "serverless-google-cloudfunctions": "^2.1.0"
+  },
+  "devDependencies": {
+    "husky": "^1.3.1"
   }
 }

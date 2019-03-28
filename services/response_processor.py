@@ -46,7 +46,7 @@ class ResponseProcessor:
         self.fetch_response()
         score = 0
         for i in self.answers:
-            score += choices_scores_json[i]
+            score += choices_scores_json.get(i,0)
 
         if score >= 81:
             return 'leading', score
