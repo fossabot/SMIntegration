@@ -15,7 +15,7 @@ class ResponseProcessor:
             answer_id
         )
         self.version = self.process_score()[0]
-        self.score = self.process_score()[1]
+        self.score = 0
         self.recipient = None
         self.language = 'en'
         self.answers = None
@@ -47,15 +47,16 @@ class ResponseProcessor:
         score = 0
         for i in self.answers:
             score += choices_scores_json.get(i,0)
-
+        self.score = score
+        
         if score >= 81:
-            return 'leading', score
+            return 'leading'
         elif score >= 65 and score <= 80:
-            return 'advancing', score
+            return 'advancing'
         elif score >= 51 and score <= 64:
-            return 'developing', score
+            return 'developing'
         else:
-            return 'beginning', score
+            return 'beginning'
 
     def process(self):
         self.fetch_response()
