@@ -14,11 +14,11 @@ class ResponseProcessor:
         self.response_endpoint = "https://api.surveymonkey.com/v3/surveys/164317910/responses/{}/details".format(
             answer_id
         )
-        self.version = self.process_score()[0]
         self.score = 0
         self.recipient = None
         self.language = 'en'
         self.answers = None
+        self.version = self.process_score()
 
     def fetch_response(self):
         r = requests.get(self.response_endpoint,
@@ -48,7 +48,7 @@ class ResponseProcessor:
         for i in self.answers:
             score += choices_scores_json.get(i,0)
         self.score = score
-        
+
         if score >= 81:
             return 'leading'
         elif score >= 65 and score <= 80:
@@ -59,7 +59,6 @@ class ResponseProcessor:
             return 'beginning'
 
     def process(self):
-        self.fetch_response()
         print(self.recipient, self.language, self.version, self.score)
         try:
             EmailSender(self.language, self.version, self.recipient).send()
